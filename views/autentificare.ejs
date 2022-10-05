@@ -1,0 +1,23 @@
+<form action="/verificare-autentificare" method="POST">
+    <div class="title">
+        <label>Autentificare client</label>
+    </div>
+    <% if (mesaj!=undefined) %>
+    <p style="color:red;"><%- mesaj -%></p>
+    <fieldset>
+        <legend>Cont</legend>
+        <label for="user">User
+        <input type="text" name="user" value=""  ></label>
+
+        </br>
+
+        <label for="pass">Pass
+        <input type="text" name="pass" value=""  ></label>
+        
+               
+    </fieldset>
+  
+    <button id ="btn_java" type="submit">Trimite</button><br><br>
+</div>
+    
+</form>

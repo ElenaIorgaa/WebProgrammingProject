@@ -1,0 +1,32 @@
+<body>
+    <form action="/logout" method="POST">
+        <% if(user!=undefined) {%>
+            <button id="btn_java" type="submit">Deconectare</button>
+            <p>Logat ca <%- user -%></p> 
+            <%}else{%>
+           <button id="btn_java" type="submit">Conectare</button>
+        <%}%>
+    </form>
+    <form action="/rezultat-chestionar" method="POST">
+        </br>
+        <aside>
+            
+        <h1 style="color:rgb(19, 10, 6); text-decoration:underline;"><em>Cât de bine îți cunoști perifericele PC?</em></h1>
+    </aside>
+    </br></br>
+    <% i=0 %>
+    <% while (i<intrebari.length){  %>
+        <p id="intrebare" style="color: rgb(121, 42, 0);font-size:20px"><%-  intrebari[i].intrebare -%> </p>
+    
+        
+        <input type="radio" name="<%= i %>" value="<%= 0 %>"  >
+        <label for="<%= i %>"><%- intrebari[i].variante[0] -%></label></br></br>
+        <input type="radio" name="<%= i %>" value="<%= 1 %>"  >
+        <label for="<%= i %>"><%- intrebari[i].variante[1] -%></label></br></br>
+        <input type="radio" name="<%= i %>" value="<%= 2 %>"  >
+        <label for="<%= i %>"><%- intrebari[i].variante[2] -%></label></br></br>
+        
+        <% i=i+1 }%>
+    
+    <button id ="btn_java" type="submit">Trimite</button><br><br>
+    </form></body>

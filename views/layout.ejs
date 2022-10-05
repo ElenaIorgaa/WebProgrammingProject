@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>WorldOfElectronics</title>
+
+    <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                Periferice IT
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="nav-links">
+              <% if( tipUser == "admin"){%>
+                <a href="/admin">Admin</a>
+             <% } %>
+              <a href="/">Acasa</a>
+              <a href="/chestionar">Chestionar</a>
+              <!-- <a href="/vizualizare-cos">Cos    <img src="https://thumbs.dreamstime.com/z/shopping-cart-icon-symbol-flat-shape-trolley-web-store-button-online-shop-logo-sign-vector-illustration-image-black-silhouette-196482017.jpg" width="30" height="30"></a> -->
+              <a href="/vizualizare-cos">Cos    <img src="https://thumbs.dreamstime.com/b/online-shopping-cart-icon-black-background-graphic-web-design-modern-simple-vector-sign-internet-concept-trendy-symbol-134098706.jpg" width="30" height="30"></a>
+            </div>
+          <!-- </div>
+          <img src="https://www.xda-developers.com/files/2021/12/Forum-Header-PC-peripherals.jpg" width=1920px height=200px; -->
+   
+    </header>
+
+    <main> 
+        <center>
+            <%- body -%>
+        </center>
+        </main>
+    
+        
+    </body>
+    
+    
+    </html> 
+    
+    
+    

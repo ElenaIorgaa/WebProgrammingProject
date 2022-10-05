@@ -1,0 +1,52 @@
+
+<form action="/logout" method="POST">
+    <% if(user!=undefined) {%>
+        <button id="btn_java" type="submit">Deconectare</button>
+        <p>Logat ca <%- user -%></p> 
+        <%}else{%>
+       <button id="btn_java" type="submit">Autentificare</button>
+    <%}%>
+</form>
+<!-- <a href="autentificare">Autentificare</a> -->
+<% if(user!=undefined) {%>
+<p>Bine ai venit, <%- user -%></p>
+<%} else {%>
+<p>Bine ai venit, anonim!</p>
+<% } %>
+<img src="https://www.gimnaziu.info/wp-content/uploads2/2012/11/Dispozitive-periferice.jpg">
+
+</br></br>
+<form action='/creare-bd' method="POST">
+<button id="btn_java" type="submit">Creare BD</button>
+</form>
+<form action='/inserare-bd' method="POST">
+<button id="btn_java" type="submit">Incarcare BD</button>
+</form>
+
+<p>Baza de date cu produsele cumparate</p>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nume produs</th>
+    </tr>
+    
+    <% i=0 %>
+    <% while (i<names.length){  %>
+        <tr>
+    <td><%- ids[i] %></td>
+    <td><%- names[i] %></td>
+
+    <form action="/adaugare-cos" method="POST">
+        <input type="hidden" name="id" value="<%- ids[i] -%>">
+    <% if(user!=undefined){ %>
+    <td><button name="<%= i %>" id ="btn_java" type="submit" class="a">Adaugă în coș</button></td>
+    <%} else {%>
+    <td><button name="<%= i %>" id ="btn_java" type="submit"class="a"  disabled>Adaugă în coș</button></td>  
+    <% } %>
+</form>
+</tr>
+
+    <% i=i+1 }%>
+    
+
+</table>

@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    font-family: "Blippo", fantasy;
+
+  }
+
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+    background-color: rgb(31, 174, 145);
+  }
+  @keyframes culori {
+    from {color: rgb(254, 206, 12);}
+    to {color: rgb(255, 77, 0);}
+  }
+  aside{
+    border-style: double;  
+    width: 600px;
+    height: 400;   
+    border: 10px dotted ;
+     animation-name:culori; 
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+     
+  }
+  .nav {
+    height: 70px;
+    width: 100%;
+    background-color: #0b0707;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 40px;
+    color: rgb(231, 71, 3);
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 30px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #cb8932;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(222, 102, 28, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  button#btn_java{
+   transform:translateY(15px); 
+   font-family: 'Bebas Neue', cursive;
+   display:inline-block;
+   padding: 0.3em 1.2em;
+   margin:0 0.6em 0.6em 0;
+   border:0.40em solid ;
+   border-radius:1em;
+   box-sizing: border-box;
+   text-decoration:none;
+   font-family:'Roboto',sans-serif;
+   font-weight:600;
+   color:#010100;
+   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+   text-align:center;
+   transition: all 0.2s;
+   background-color: #f7a359;
+   border-color: rgb(143, 45, 6);
+  }
+  button#btn_java.a{
+  font-size: 10px;
+  background-color: #5e9ea9;
+  border-color: rgb(143, 45, 6);
+  border-radius:0.1em;
+  transform: translateX(10px);
+
+  }
+
+button#btn_java.a:hover{
+font-size: 10px;
+background-color: #0d1c58;
+border-color: rgb(143, 45, 6);
+border-radius:0.1em;
+transform: translateX(10px);
+border-radius:1em;
+}
+button#btn_java.a:disabled{
+  font-size: 10px;
+  background-color: #8a9091;
+  border-color: rgb(128, 128, 128);
+  border-radius:0.1em;
+  transform: translateX(10px);
+  }
+  button#btn_java:hover{
+    transform:translateY(15px); 
+    font-family: 'Bebas Neue', cursive;
+    display:inline-block;
+    padding: 0.3em 1.2em;
+    margin:0 0.6em 0.6em 0;
+    border:0.40em solid ;
+    border-radius:1em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:600;
+    color:#010100;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    background-color: #773e0d;
+    border-color: rgb(143, 45, 6);
+  }

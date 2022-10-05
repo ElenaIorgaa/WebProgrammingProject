@@ -1,0 +1,18 @@
+<body>
+    <form action="/logout" method="POST">
+        <% if(user!=undefined) {%>
+            <button id="btn_java" type="submit">Deconectare</button>
+            <p>Logat ca <%- user -%></p> 
+            <%}else{%>
+           <button id="btn_java" type="submit">Conectare</button>
+        <%}%>
+    </form>
+    <h1>Coșul meu de cumpărături </h1>
+<% if(produse!=undefined){%>
+<% for(var i in produse) {%>
+    <% if(i!=undefined){%>
+<font style="border:green; border-width:5px; border-style:outset;color:rgb(137, 66, 0); border-style:dashed; padding: 6px;"><%- data[produse[i]] %></font><br /><br /><br />
+<% }}}else{%>
+<h2 style="color:rgb(187, 14, 14);">Cosul este momentan gol</h2>
+<% } %> 
+</body>

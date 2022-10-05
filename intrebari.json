@@ -1,0 +1,32 @@
+[
+    {
+        "intrebare": "Are un pointer cu care sa navighezi si sa instruiesti calculatorul ce sa faca:",
+        "variante": ["mouse", "sobolan", "monitor", "tastatura"],
+        "corect": 0
+    },
+    {
+        "intrebare": "Tastatura este un dispozitiv periferic de:",
+        "variante": ["intrare", "iesire", "stocare", "varianta 4"],
+        "corect": 0
+    },
+    {
+        "intrebare": "Monitorul este un dispozitiv periferic de:",
+        "variante": ["intrare", "iesire", "stocare", "varianta 4"],
+        "corect": 1
+    },
+    {
+        "intrebare": "Dispozitivele de intrare sunt acele dispozitive cu ajutorul cărora ",
+        "variante": ["calculatorul transmite informații către utilizator", "utilizatorul transmite comenzi către calculator", "utilizatorul se conectează la internet", "calculatorul funcționează normal"],
+        "corect": 1
+    },
+    {
+        "intrebare": "Calculatorul este un ansamblu de",
+        "variante": ["componente hardware", "componente software", "componente hardware și software", "componente electronice"],
+        "corect": 2
+    },
+    {
+        "intrebare": "Modemul este dispozitivul care are rolul de a:",
+        "variante": ["tipări informații", "a ușura comenzile pentru jocuri", "a scana informațiile", "conecta calculatorul la Internet"],
+        "corect": 3
+    }
+]
